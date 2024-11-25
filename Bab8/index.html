@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perumahan A-Frame</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!-- Lampu -->
+        <a-entity light="type: ambient; intensity: 0.8; color: #ffffff"></a-entity>
+        <a-entity light="type: directional; intensity: 0.6" position="10 20 10"></a-entity>
+        
+        <!-- Latar Belakang -->
+        <a-sky color="#87CEEB"></a-sky>
+
+        <!-- Tanah -->
+        <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#a3d977"></a-plane>
+
+        <!-- Rumah -->
+        <a-box position="-3 1 -5" depth="4" height="2" width="3" color="#ffcc66"></a-box>
+        <a-cone position="-3 2.5 -5" radius-bottom="2.5" height="1.5" color="#8B0000"></a-cone>
+
+        <a-box position="3 1 -6" depth="4" height="2" width="3" color="#ff9966"></a-box>
+        <a-cone position="3 2.5 -6" radius-bottom="2.5" height="1.5" color="#8B0000"></a-cone>
+
+        <a-box position="0 1 -10" depth="4" height="2" width="3" color="#66ccff"></a-box>
+        <a-cone position="0 2.5 -10" radius-bottom="2.5" height="1.5" color="#8B0000"></a-cone>
+
+        <!-- Jalan -->
+        <a-plane position="0 0.01 -5" rotation="-90 0 0" width="10" height="20" color="#555555"></a-plane>
+
+        <!-- Pohon -->
+        <a-cylinder position="-6 1 -4" height="2" radius="0.3" color="#8B4513"></a-cylinder>
+        <a-sphere position="-6 2.5 -4" radius="1" color="#228B22"></a-sphere>
+
+        <a-cylinder position="6 1 -6" height="2" radius="0.3" color="#8B4513"></a-cylinder>
+        <a-sphere position="6 2.5 -6" radius="1" color="#228B22"></a-sphere>
+    </a-scene>
+</body>
+</html>
